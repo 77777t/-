@@ -3,11 +3,11 @@ function global_(global_,Value)
     memory.write_int(memory.script_global(global_),Value)
 end
 wait_=10
-menu.slider(menu.my_root(), "util.yield",{},"",1, 10000, 300, 100,function(Value)
+menu.slider(menu.my_root(), "util.yield",{},"建议使用6000",1, 10000, 300, 100,function(Value)
 wait_  = Value
 end)
 
-loop=menu.toggle_loop(menu.my_root(),"120M重复",{},"建议使用6000",function()
+loop=menu.toggle_loop(menu.my_root(),"120M重复",{},"",function()
 global_(1964179, 1)
 util.yield(wait_,menu.set_menu_name(loop,"120M重复".."+500K"))
 global_(1964179, 2)
