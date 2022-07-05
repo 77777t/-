@@ -3,7 +3,7 @@ function global_(global_,Value)
     memory.write_int(memory.script_global(global_),Value)
 end
 wait_=10
-menu.slider(menu.my_root(), "util.yield",{},"建议使用6000",1, 10000, 300, 100,function(Value)
+menu.slider(menu.my_root(), "util.yield",{},"建议使用6000",1, 10000, 6000, 100,function(Value)
 wait_  = Value
 end)
 
