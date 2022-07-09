@@ -3,8 +3,8 @@ function global_(global_,Value)
     memory.write_int(memory.script_global(global_),Value)
 end
 wait_=10
-menu.slider(menu.my_root(), "util.yield",{},"建议使用6000",1, 10000, 6000, 100,function(Value)
-wait_  = Value
+menu.slider(menu.my_root(), "util.yield",{"waitut"},"建议使用6000",1, 10000, 6000, 100,function(Value)
+wait_= Value
 end)
 
 loop=menu.toggle_loop(menu.my_root(),"120M重复",{},"",function()
@@ -27,8 +27,5 @@ menu.click_slider(menu.my_root(), "加钱",{},"1==500K\n2==750K\n3==120M",1, 3, 
 end
 end)
 menu.toggle_loop(menu.my_root(),"ChangeFakeMpCash",{},"",function()
-    HUD._SET_PLAYER_CASH_CHANGE(654776*8700,654776*8700)
-end)
-
-
+HUD._SET_PLAYER_CASH_CHANGE(654776*8700,654776*8700)end)
 util.keep_running()
