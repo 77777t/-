@@ -1,5 +1,5 @@
 require"natives-1627063482"
-util.toast("Hello,when using 120M重复,please move util.yield")
+
 function global_(global_,Value)
     memory.write_int(memory.script_global(global_),Value)
 end
@@ -33,4 +33,12 @@ end
 end)
 menu.toggle_loop(menu.my_root(),"ChangeFakeMpCash",{},"",function()
 HUD._SET_PLAYER_CASH_CHANGE(654776*8700,654776*8700)end)
+
+while true do
+    util.toast("Hello,when using 120M重复,please move util.yield")
+    util.yield()
+    if  wait_ ==6100 or  wait_ ==5900  then
+    break 
+    end
+   end
 util.keep_running()
